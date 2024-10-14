@@ -1,0 +1,77 @@
+.signup {
+    display: flex;
+    align-items: center;
+  }
+  
+  .signup-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 12%;
+    padding: 10px;
+  }
+  
+  .signup-container h1 {
+    font-size: 25px;
+    font-weight: 700;
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-form label {
+    font-size: 20px;
+  }
+  
+  .signup-form input {
+    border: none;
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 50px;
+    background: #32323c;
+    color: #a0a0a0;
+    font-family: "Outfit";
+    font-size: 20px;
+  }
+  
+  .signup-form input:hover {
+    border: 2px solid #a18cd1;
+  }
+  
+  .signup-button {
+    align-self: center;
+    border: none;
+    color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    font-size: 20px;
+    padding: 20px 20px;
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  
+  .link {
+    color: #a18cd1; /* Change this to your desired color */
+    text-decoration: underline; /* Underline to indicate it's a link */
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    text-decoration: none; /* Remove underline on hover */
+  }
+  

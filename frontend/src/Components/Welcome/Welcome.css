@@ -1,0 +1,91 @@
+.welcome {
+    display: flex;
+    align-items: center;
+  }
+  
+  .welcome-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 10%;
+    padding: 10px;
+  }
+  
+  .welcome-container h1 {
+    font-size: 25px;
+    font-weight: 700;
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .welcome-container p {
+    max-width: 400px;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form label {
+    font-size: 20px;
+  }
+  
+  .login-form input {
+    border: none;
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 50px;
+    background: #32323c;
+    color: #a0a0a0;
+    font-family: "Outfit";
+    font-size: 20px;
+  }
+  
+  .login-form input:hover {
+    border: 2px solid #a18cd1;
+  }
+  
+  .login-form button {
+    border: none;
+    color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    font-size: 20px;
+    padding: 20px 20px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  .login-form button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .link {
+    color: #a18cd1; /* Change this to your desired color */
+    text-decoration: underline; /* Underline to indicate it's a link */
+    cursor: pointer;
+  }
+  
+  .link:hover {
+      text-decoration: none; /* Remove underline on hover */
+  }
+  

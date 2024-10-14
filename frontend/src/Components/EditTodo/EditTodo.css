@@ -1,0 +1,55 @@
+.modal-overlay {
+    position: fixed;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #a18cd1;
+    border-radius: 50px;
+  }
+  
+  .modal-content h2 {
+    font-size: 25px;
+    font-weight: 700;
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .edit-form {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .edit-form input {
+      border: none;
+      width: 200px;
+      height: 50px;
+      padding-left: 20px;
+      border-radius: 50px;
+      background: #32323c;
+      color: #a0a0a0;
+      font-family: "Outfit";
+      font-size: 20px;
+  }
+  
+  .edit-form button {
+    width: 38px;
+    height: 43px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #a18cd1;
+  }
+  
+  .edit-form button:hover {
+    background: #f0f0f0;
+  }
+  
