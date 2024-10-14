@@ -8,13 +8,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import EditTodo from "../EditTodo/EditTodo";
 import "./Todo.css";
+import { useNavigate } from "react-router-dom";
 
-const Todo = () => {
+const Todo = ({ handleLogout }) => {
   const [todo, setTodo] = useState("");
   const [todoList, setTodoList] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentTask, setCurrentTask] = useState("");
   const taskInputRef = useRef(null);
+  const navigate = useNavigate();
 
   const addTodo = () => {
     if (!todo) return;
@@ -49,6 +51,11 @@ const Todo = () => {
       )
     );
     setCurrentTask(""); // Reset currentTask
+  };
+
+  const handleLogoutClick = async () => {
+    await handleLogout(); 
+    navigate("/login"); 
   };
 
   return (
@@ -106,6 +113,11 @@ const Todo = () => {
         task={currentTask}
         onEdit={editTodo}
       />
+      <footer className="footer">
+        <button className="logout-button" onClick={handleLogoutClick}>
+          Logout
+        </button>
+      </footer>
     </div>
   );
 };
